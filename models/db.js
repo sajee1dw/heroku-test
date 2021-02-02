@@ -1,6 +1,7 @@
 require('../config/config.js');
 var mongoose = require('mongoose');
 require('./user.model.js');
+require('./admin.model.js');
 
 mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
