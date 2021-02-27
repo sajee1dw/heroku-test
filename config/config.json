@@ -5,6 +5,6 @@
         "JWT_SECRET" :"SECRET#123",
         "JWT_EXP" :"2m",
         "USER" : "achiniupeksha87@gmail.com",
-        "PASSWORD" : "Masd#1995"
+        "PASSWORD" : ""
     }
 }
