@@ -2,6 +2,10 @@ require('../config/config.js');
 var mongoose = require('mongoose');
 require('./user.model.js');
 require('./admin.model.js');
+require('./productType.model.js');
+require('./product.model.js');
+require('./order.model.js');
+require('./customer.model.js');
 
 mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
