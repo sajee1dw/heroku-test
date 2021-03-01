@@ -6,8 +6,8 @@ require('./productType.model.js');
 require('./product.model.js');
 require('./order.model.js');
 require('./customer.model.js');
-
-mongoose.connect(process.env.MONGODB_URI, {
+const MONGODB_URI = "mongodb+srv://DREAMSSOLUTION:dreamssolution@sigendb.lrkrp.mongodb.net/SigenDB?retryWrites=true&w=majority";
+mongoose.connect(MONGODB_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true
 }, (err) => {
