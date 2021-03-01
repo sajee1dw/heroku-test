@@ -1,9 +1,0 @@
-{
-    "development": {
-        "MONGODB_URI": "mongodb+srv://DREAMSSOLUTION:dreamssolution@sigendb.lrkrp.mongodb.net/SigenDB?retryWrites=true&w=majority",
-        "JWT_SECRET": "SECRET#123",
-        "JWT_EXP": "2m",
-        "USER": "achiniupeksha87@gmail.com",
-        "PASSWORD": "Masd#1995"
-    }
-}
