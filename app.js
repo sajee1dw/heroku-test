@@ -13,7 +13,9 @@ app.use(bodyparser.json());
 app.use(cors());
 app.use(passport.initialize());
 app.use('/api', rtsIndex);
+
 const PORT = process.env.PORT || 3000;
+
 app.use((err, req, res, next) => {
     if (err.name == 'ValidationError') {
         var valErrors = [];

@@ -1,17 +1,17 @@
 const nodemailer = require('nodemailer');
 require('../config/config.js');
-const USER = "achiniupeksha87@gmail.com";
-const PASSWORD = "Masd#1995";
+// const USER = "achiniupeksha87@gmail.com";
+// const PASSWORD = "Masd#1995";
 
 function sendemail(receiver, htmlTag) {
-    const sender = USER;
+    const sender = process.env.USER;
     const subject = 'Sigen.LK';
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: USER,
-            pass: PASSWORD
+            user: process.env.USER,
+            pass: process.env.PASSWORD
         },
         tls: {
             rejectUnauthorized: false

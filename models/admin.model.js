@@ -37,14 +37,14 @@ adminSchema.path('email').validate((val) => {
 // methods
 
 adminSchema.methods.verifyPassword = function(password) {
-    return bcrypt.compareSync(password, this.password);
-}
-const JWT_SECRET = "SECRET#123";
-const JWT_EXP = "2m";
+        return bcrypt.compareSync(password, this.password);
+    }
+    // const JWT_SECRET = "SECRET#123";
+    // const JWT_EXP = "2m";
 adminSchema.methods.generateJwt = function() {
     return jwt.sign({ _id: this._id, role: this.role, username: this.username, email: this.email },
-        JWT_SECRET, {
-            expiresIn: JWT_EXP
+        process.env.JWT_SECRET, {
+            expiresIn: process.env.JWT_EXP
         });
 }
 
